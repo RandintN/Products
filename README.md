@@ -1,4 +1,4 @@
-Application for AB InBev tech challenge
+Application for a tech challenge
 
 **Used technologies**
 
@@ -30,3 +30,5 @@ and setup an alias for localhost to be equals to the defined host name for Mongo
 127.0.0.1       localhost api-database
 
 For windows, the file is `C:\Windows\System32\drivers\etc\hosts`
+
+At the root of the project, where this README.md file is, run: `maven clean install` or, if you don't have maven installed, run: `chmod +x mvnw && ./mvnw clean` install
