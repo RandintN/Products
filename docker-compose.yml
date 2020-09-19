@@ -1,0 +1,15 @@
+version: "3"
+services:
+  api-database:
+    image: mongo:4.4.1-bionic
+    container_name: "api-database"
+    ports:
+      - 27017:27017
+
+  api-products:
+    image: randintn/product:0.0.1
+    container_name: "api-products"
+    ports:
+      - 8080:8080
+    links:
+      - api-database
