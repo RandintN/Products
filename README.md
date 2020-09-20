@@ -31,4 +31,8 @@ and setup an alias for localhost to be equals to the defined host name for Mongo
 
 For windows, the file is `C:\Windows\System32\drivers\etc\hosts`
 
-At the root of the project, where this README.md file is, run: `maven clean install` or, if you don't have maven installed, run: `chmod +x mvnw && ./mvnw clean` install
+At the root of the project, where this README.md file is, run:  `maven clean install`  or, if you don't have maven installed, run:  `chmod +x mvnw && ./mvnw clean  install`
+
+After successful build, run: `java -jar target/products-0.0.1-SNAPSHOT.jar`
+
+The application will be available at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
