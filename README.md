@@ -20,19 +20,15 @@ Application for a tech challenge
 `docker-compose up`
 5. Wait for docker to run it's pulling of images
 6. Go to [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) to see and use the 
-available endpoint's resources.
+available endpoint's resources. 
 
 **Without Docker**
 
 To run the application locally without docker, it's necessary to have a running MongoDB server running 
-and setup an alias for localhost to be equals to the defined host name for Mongo, which is `api-database`. In order to do that, edit the Unix's /etc/hosts file to be like this:
-
-127.0.0.1       localhost api-database
-
-For windows, the file is `C:\Windows\System32\drivers\etc\hosts`
+and to add the following program arguments on your IDE of choice: `--spring.data.mongodb.host=localhost`
 
 At the root of the project, where this README.md file is, run:  `maven clean install`  or, if you don't have maven installed, run:  `chmod +x mvnw && ./mvnw clean  install`
 
-After successful build, run: `java -jar target/products-0.0.1-SNAPSHOT.jar`
+After successful build, run: `java -jar target/products-0.0.1-SNAPSHOT.jar --spring.data.mongodb.host=localhost`
 
 The application will be available at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
