@@ -24,10 +24,11 @@ available endpoint's resources.
 
 **Without Docker**
 
-To run the application locally without docker, it's necessary to have a running MongoDB server running 
+To run the application locally without docker, it's necessary to have a running MongoDB server 
 and to add the following program arguments on your IDE of choice: `--spring.data.mongodb.host=localhost`
 
-At the root of the project, where this README.md file is, run:  `maven clean install`  or, if you don't have maven installed, run:  `chmod +x mvnw && ./mvnw clean  install`
+At the root of the project, where this README.md file is, run:  `maven clean install`  or, if you don't have maven installed, 
+run:  `chmod +x mvnw && ./mvnw clean  install`
 
 After successful build, run: `java -jar target/products-0.0.1-SNAPSHOT.jar --spring.data.mongodb.host=localhost`
 
